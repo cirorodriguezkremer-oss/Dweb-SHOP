@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dweb SHOP | Creamos tu página web profesional</title>
     <link rel="stylesheet" href="style/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- HEADER -->
     <header class="header">
         <div class="logo">Dweb<span>SHOP</span></div>
-            <nav>
-                <ul>
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#servicios">Servicios</a></li>
-                    <li><a href="#portafolio">Portafolio</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
     </header>
 
     <main>
@@ -34,23 +39,23 @@
         <!-- SERVICIOS -->
         <section id="servicios" class="servicios">
             <h2>Nuestros servicios</h2>
-                <div class="servicios-grid">
-                    <div class="servicio">
-                        <h3>Landing Page</h3>
-                        <p>Diseños optimizados para captar clientes y generar conversiones rápidas.</p>
-                    </div>
-                    <div class="servicio">
-                        <h3>Web Institucional</h3>
-                        <p>Presencia profesional para tu empresa con un sitio completo y adaptable.</p>
-                    </div>
-                    <div class="servicio">
-                        <h3>Tienda Online</h3>
-                            <ul>
-                                <li><strong>Tienda Nube:</strong> configuración rápida en plataforma segura.</li>
-                                <li><strong>Personalizada:</strong> diseño exclusivo hecho a medida.</li>
-                            </ul>
-                    </div>
+            <div class="servicios-grid">
+                <div class="servicio">
+                    <h3>Landing Page</h3>
+                    <p>Diseños optimizados para captar clientes y generar conversiones rápidas.</p>
                 </div>
+                <div class="servicio">
+                    <h3>Web Institucional</h3>
+                    <p>Presencia profesional para tu empresa con un sitio completo y adaptable.</p>
+                </div>
+                <div class="servicio">
+                    <h3>Tienda Online</h3>
+                    <ul>
+                        <li><strong>Tienda Nube:</strong> configuración rápida en plataforma segura.</li>
+                        <li><strong>Personalizada:</strong> diseño exclusivo hecho a medida.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- BENEFICIOS -->
@@ -72,30 +77,38 @@
             </div>
         </section>
 
-
-    <!-- PORTAFOLIO -->
+        <!-- PORTAFOLIO -->
         <section id="portafolio" class="portafolio">
             <h2>Algunos de nuestros proyectos</h2>
-                <div class="portafolio-grid">
-                    <div class="portafolio-item">Ejemplo 1</div>
-                    <div class="portafolio-item">Ejemplo 2</div>
-                    <div class="portafolio-item">Ejemplo 3</div>
-                    </div>
+            <div class="portafolio-grid">
+                <div class="portafolio-item">Ejemplo 1</div>
+                <div class="portafolio-item">Ejemplo 2</div>
+                <div class="portafolio-item">Ejemplo 3</div>
+            </div>
         </section>
 
-    <!-- CONTACTO -->
+        <!-- CONTACTO -->
         <section id="contacto" class="contacto">
             <h2>Contáctanos</h2>
             <p>¿Listo para tener tu web? Escríbenos y te asesoramos sin compromiso.</p>
             <a href="https://wa.me/XXXXXXXXXXX" target="_blank" class="btn-primary">📱 WhatsApp</a>
         </section>
-   </main>
+    </main>
 
-<!-- FOOTER -->
+    <!-- FOOTER -->
     <footer class="footer">
         <p>© 2025 Dweb SHOP — Todos los derechos reservados.</p>
     </footer>
 
+    <!-- JS para menú hamburguesa -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
 
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-active');
+            hamburger.classList.toggle('toggle');
+        });
+    </script>
 </body>
 </html>
