@@ -21,7 +21,7 @@ body {
     scroll-behavior: smooth;
 }
 
-/* ---------- HEADER (Flexbox) ---------- */
+/* ---------- HEADER ---------- */
 .header {
     display: flex;
     justify-content: space-between;
@@ -91,7 +91,7 @@ nav a:focus {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* ---------- HERO (Flexbox) ---------- */
+/* ---------- HERO ---------- */
 .hero {
     height: 100vh;
     display: flex;
@@ -129,12 +129,12 @@ nav a:focus {
     font-weight: 600;
     text-decoration: none;
     transition: background 0.3s;
+    outline: none;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     background: var(--primary-light);
-    outline: none;
 }
 
 /* ---------- SECCIONES ---------- */
@@ -142,7 +142,7 @@ section {
     scroll-margin-top: 90px;
 }
 
-/* ---------- SERVICIOS (Grid) ---------- */
+/* ---------- SERVICIOS ---------- */
 .servicios {
     padding: 100px 60px;
     text-align: center;
@@ -164,7 +164,7 @@ section {
     padding: 30px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: none;
 }
 
 .servicio:hover {
@@ -172,7 +172,7 @@ section {
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
-/* ---------- BENEFICIOS (Grid) ---------- */
+/* ---------- BENEFICIOS ---------- */
 .beneficios {
     background: #111;
     padding: 100px 60px;
@@ -186,7 +186,7 @@ section {
     margin-top: 40px;
 }
 
-/* ---------- PORTAFOLIO (Grid) ---------- */
+/* ---------- PORTAFOLIO ---------- */
 .portafolio {
     padding: 100px 60px;
     text-align: center;
@@ -204,7 +204,7 @@ section {
     padding: 80px 0;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: none;
 }
 
 .portafolio-item:hover {
@@ -223,7 +223,7 @@ section {
     margin-bottom: 30px;
 }
 
-/* ---------- FOOTER (Flexbox) ---------- */
+/* ---------- FOOTER ---------- */
 .footer {
     text-align: center;
     padding: 40px;
@@ -264,4 +264,9 @@ section {
         font-size: 0.8rem;
         padding: 20px;
     }
+}
+
+/* Quitar outlines en enlaces y botones */
+a, button {
+    outline: none;
 }
