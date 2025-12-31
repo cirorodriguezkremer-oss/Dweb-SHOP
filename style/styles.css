@@ -33,6 +33,7 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
+    height: 80px;
 }
 
 .logo {
@@ -140,12 +141,17 @@ nav a:focus {
 /* ---------- SECCIONES ---------- */
 section {
     scroll-margin-top: 90px;
+    padding-top: 120px; /* Para que no quede debajo del header */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontal */
+    justify-content: center; /* Centra vertical */
+    text-align: center;
 }
 
 /* ---------- SERVICIOS ---------- */
 .servicios {
     padding: 100px 60px;
-    text-align: center;
 }
 
 .servicios h2 {
@@ -157,6 +163,8 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
+    justify-content: center; /* Centra las columnas */
+    align-items: stretch;
 }
 
 .servicio {
@@ -165,18 +173,16 @@ section {
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     border: none;
-}
-
-.servicio:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---------- BENEFICIOS ---------- */
 .beneficios {
     background: #111;
     padding: 100px 60px;
-    text-align: center;
 }
 
 .beneficios-grid {
@@ -184,12 +190,13 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 40px;
+    justify-content: center;
+    align-items: stretch;
 }
 
 /* ---------- PORTAFOLIO ---------- */
 .portafolio {
     padding: 100px 60px;
-    text-align: center;
 }
 
 .portafolio-grid {
@@ -197,6 +204,8 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     margin-top: 40px;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .portafolio-item {
@@ -205,17 +214,15 @@ section {
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
     border: none;
-}
-
-.portafolio-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---------- CONTACTO ---------- */
 .contacto {
     padding: 100px 60px;
-    text-align: center;
 }
 
 .contacto p {
@@ -232,8 +239,82 @@ section {
     color: var(--text-light);
 }
 
-/* ---------- MEDIA QUERIES ---------- */
+/* ---------- SOBRE NOSOTROS ---------- */
+.sobre-nosotros {
+    padding: 100px 60px;
+    background: #111;
+}
+
+.sobre-nosotros h2 {
+    font-size: 2rem;
+    color: var(--text);
+}
+
+.sobre-text {
+    max-width: 700px;
+    margin: 0 auto;
+    color: var(--text-light);
+    font-size: 1rem;
+}
+
+/* ---------- CARDS OSCURAS BOOTSTRAP ---------- */
+.card-custom {
+    background: #1a1a1a;
+    color: var(--text);
+    border: none;
+    border-radius: 12px;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-custom .card-title {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.card-custom .card-text {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.card-custom:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+.card-custom ul {
+    color: var(--text-light);
+    padding-left: 0;
+    list-style: none;
+}
+
+/* ---------- BOTONES BOOTSTRAP PERSONALIZADOS ---------- */
+.btn-custom {
+    background: var(--primary);
+    color: #000;
+    border-radius: 6px;
+    font-weight: 600;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background: var(--primary-light);
+}
+
+/* ---------- RESPONSIVE ---------- */
 @media (max-width: 768px) {
+    .sobre-nosotros {
+        padding: 60px 20px;
+    }
     .header {
         flex-direction: column;
         align-items: flex-start;
