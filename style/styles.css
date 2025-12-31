@@ -141,11 +141,11 @@ nav a:focus {
 /* ---------- SECCIONES ---------- */
 section {
     scroll-margin-top: 90px;
-    padding-top: 120px; /* Para que no quede debajo del header */
+    padding-top: 120px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontal */
-    justify-content: center; /* Centra vertical */
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -163,7 +163,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    justify-content: center; /* Centra las columnas */
+    justify-content: center;
     align-items: stretch;
 }
 
@@ -315,32 +315,54 @@ section {
     .sobre-nosotros {
         padding: 60px 20px;
     }
+
     .header {
-        flex-direction: column;
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         padding: 15px 20px;
+        height: auto;
     }
+
     nav ul {
         flex-direction: column;
         gap: 15px;
         display: none;
         width: 100%;
+        background: rgba(0,0,0,0.95);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        padding: 20px 0;
+        text-align: center;
     }
+
     nav ul.nav-active {
         display: flex;
     }
+
     .hamburger {
         display: flex;
     }
+
     .hero h1 {
         font-size: 2rem;
     }
+
+    .hero p {
+        font-size: 0.95rem;
+        padding: 0 10px;
+    }
+
     .btn-primary {
         padding: 10px 20px;
+        font-size: 0.9rem;
     }
+
     .servicios, .beneficios, .portafolio, .contacto {
         padding: 60px 20px;
     }
+
     .footer {
         font-size: 0.8rem;
         padding: 20px;
