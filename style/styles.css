@@ -388,7 +388,7 @@ a, button {
     display: none;
 }
 
-/* Animación hamburguesa */
+/* Estilo hamburguesa */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -405,7 +405,7 @@ a, button {
     transition: all 0.3s ease;
 }
 
-/* Transformación en X cuando checkbox está marcado */
+/* Transformación en X */
 .menu-toggle:checked + .hamburger span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
 }
@@ -416,13 +416,13 @@ a, button {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-/* Menú responsive solo con CSS */
+/* Menú responsive */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
     }
 
-    nav ul {
+    nav ul.nav-links {
         display: none;
         flex-direction: column;
         gap: 15px;
@@ -436,7 +436,6 @@ a, button {
         z-index: 1000;
     }
 
-    /* Mostrar menú cuando checkbox está marcado */
     .menu-toggle:checked ~ ul.nav-links {
         display: flex;
     }
