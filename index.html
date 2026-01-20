@@ -3,67 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>Dweb SHOP | Inicio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tu CSS compilado -->
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">Dweb<span>SHOP</span></div>
-        <nav>
+<header class="header">
+    <div class="logo">Dweb<span>SHOP</span></div>
 
-        <!-- Checkbox oculto -->
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <!-- Menú hamburguesa -->
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-        <!-- Hamburguesa -->
-            <label for="menu-toggle" class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
+    <!-- Navegación -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<main class="hero">
+    <div class="container text-center">
+        <h1>Creamos tu <span>página web</span> profesional</h1>
+        <p>Landing Pages, webs institucionales y tiendas online.</p>
+        <a href="contacto.html" class="btn btn-primary">Cotizar ahora</a>
+    </div>
+</main>
 
-    <main>
-        <section class="hero d-flex align-items-center justify-content-center text-center"
-                 style="height: 100vh; 
-                        background: url(https://news.microsoft.com/es-xl/features/windows-11-florece-con-bloom-un-nuevo-simbolo-para-un-nuevo-sistema-operativo/) no-repeat center center; 
-                        background-size: cover;">
-            <div class="container">
-                <h1 class="display-4 fw-bold">Creamos tu <span>página web</span> profesional</h1>
-                <p class="lead mt-3">Landing Pages, webs institucionales y tiendas online.</p>
-                <!-- Botón usando Bootstrap pero con tu estilo -->
-                <a href="contacto.html" class="btn btn-primary btn-lg mt-3" style="background: var(--primary); color: #000; border-radius: 6px; padding: 12px 30px;">Cotizar ahora</a>
-            </div>
-        </section>
-    </main>
+<footer class="footer text-center">
+    <p>© 2025 Dweb SHOP — Todos los derechos reservados.</p>
+</footer>
 
-    <footer class="footer text-center py-4">
-        <p>© 2025 Dweb SHOP — Todos los derechos reservados.</p>
-    </footer>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- JS menú hamburguesa -->
+<script>
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav-links');
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- JS MENÚ HAMBURGUESA -->
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-            hamburger.classList.toggle('toggle');
-        });
-    </script>
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('nav-active');
+    hamburger.classList.toggle('toggle');
+});
+</script>
 
 </body>
 </html>
+
 

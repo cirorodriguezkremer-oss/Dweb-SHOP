@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as v;
+
+.btn-custom {
+  background: v.$primary;
+  color: #000;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 12px 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+  text-align: center;
+
+  &:hover,
+  &:focus {
+    background: v.$primary-light;
+  }
+}

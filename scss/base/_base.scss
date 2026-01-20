@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as v;
+
+header, footer {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  background: #0a0a0a;
+  color: v.$text-light;
+  font-size: 0.9rem;
+}
+

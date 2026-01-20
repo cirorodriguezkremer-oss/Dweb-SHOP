@@ -1,0 +1,32 @@
+@use '../abstracts/variables' as v;
+
+.card-custom {
+  background: #1a1a1a;
+  color: v.$text;
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  .card-title {
+    color: v.$primary;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .card-text {
+    color: v.$text-light;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+  }
+}

@@ -1,0 +1,35 @@
+.header {
+  @include flex-center(row, space-between, center);
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    span { color: $primary; }
+  }
+
+  nav {
+    ul {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+
+      a {
+        color: $text;
+        text-decoration: none;
+        font-weight: 400;
+        transition: color 0.3s;
+        &:hover, &:focus { color: $primary; }
+      }
+    }
+
+    .hamburger { display: none; } // se mostrará en mobile
+  }
+}

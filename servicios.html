@@ -19,90 +19,97 @@
         header, footer {
             width: 100%;
         }
-        .servicios .card-img-top {
-            border-radius: 12px 12px 0 0;
-        }
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">Dweb<span>SHOP</span></div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="header">
+    <div class="logo">Dweb<span>SHOP</span></div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="portafolio.html">Portafolio</a></li>
+            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center py-5">
-        <section class="servicios py-5">
-            <div class="container text-center">
-                <h2 class="mb-5">Nuestros servicios</h2>
-                
-                <div class="row g-4 justify-content-center">
-                    <!-- Card 1 -->
-                    <div class="col-md-4">
-                        <div class="card card-custom h-100 text-center">
-                            <img src="images/landingpage.jpg" class="card-img-top" alt="Landing Page">
-                            <div class="card-body">
-                                <h5 class="card-title">Landing Page</h5>
-                                <p class="card-text">Diseños optimizados para conversiones.</p>
-                            </div>
+<main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center py-5">
+    <section class="servicios py-5">
+        <div class="container text-center">
+            <h2 class="mb-5">Nuestros servicios</h2>
+            
+            <div class="row g-4 justify-content-center">
+                <!-- Landing Page -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Landing Page</h5>
+                            <p class="card-text">Ideal para captar clientes y promocionar un producto o servicio.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li>Secciones: 1 a 3</li>
+                                <li>Precio: 100-350 USD</li>
+                                <li>Entrega: 5 días hábiles</li>
+                            </ul>
                         </div>
                     </div>
-
-                    <!-- Card 2 -->
-                    <div class="col-md-4">
-                        <div class="card card-custom h-100 text-center">
-                            <img src="images/webinstitucional.jpg" class="card-img-top" alt="Web Institucional">
-                            <div class="card-body">
-                                <h5 class="card-title">Web Institucional</h5>
-                                <p class="card-text">Presencia profesional para tu empresa.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="col-md-4">
-                        <div class="card card-custom h-100 text-center">
-                            <img src="images/tiendaonline.jpg" class="card-img-top" alt="Tienda Online">
-                            <div class="card-body">
-                                <h5 class="card-title">Tienda Online</h5>
-                                <ul class="card-text list-unstyled mb-0">
-                                    <li>Tienda Nube</li>
-                                    <li>Diseño personalizado</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- Web Institucional -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Institucional</h5>
+                            <p class="card-text">Presencia profesional para tu empresa con varias secciones y diseño corporativo.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li>Secciones: 4 a 6</li>
+                                <li>Precio: 500-750 USD</li>
+                                <li>Entrega: 10 días hábiles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tienda Online -->
+                <div class="col-md-4">
+                    <div class="card card-custom h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Tienda Online</h5>
+                            <p class="card-text">Crea tu tienda virtual con catálogo, carrito de compras y pasarela de pago.</p>
+                            <ul class="list-unstyled mb-0">
+                                <li>Secciones: 5 a 8</li>
+                                <li>Precio: 800-1200 USD</li>
+                                <li>Entrega: 20 días hábiles</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+</main>
 
-    <footer class="footer text-center py-4">
-        <p>© 2025 Dweb SHOP</p>
-    </footer>
+<footer class="footer text-center py-4">
+    <p>© 2025 Dweb SHOP</p>
+</footer>
 
-    <!-- Bootstrap JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-            hamburger.classList.toggle('toggle');
-        });
-    </script>
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        hamburger.classList.toggle('toggle');
+    });
+</script>
 
 </body>
 </html>
+
 
