@@ -45,13 +45,15 @@
                 <h2 class="mb-5">Algunos de nuestros proyectos</h2>
 
                 <div class="row g-4 justify-content-center">
-                    <!-- Proyecto 1 -->
+                    <!-- Proyecto 1 con imagen clickeable -->
                     <div class="col-md-4">
                         <div class="card card-custom h-100 text-center">
-                            <img src="images/proyecto1.jpg" class="card-img-top" alt="Proyecto 1">
+                            <a href="html/landing/index.html">
+                                <img src="html/landing/img/hc.jpg" class="card-img-top" alt="Proyecto 1">
+                            </a>
                             <div class="card-body">
-                                <h5 class="card-title">Proyecto 1</h5>
-                                <p class="card-text">Descripción breve del proyecto 1.</p>
+                                <h5 class="card-title">Burger House</h5>
+                                <p class="card-text">Este proyecto es una landing page de una tienda de hamburguesas </p>
                             </div>
                         </div>
                     </div>
@@ -59,7 +61,7 @@
                     <!-- Proyecto 2 -->
                     <div class="col-md-4">
                         <div class="card card-custom h-100 text-center">
-                            <img src="images/proyecto2.jpg" class="card-img-top" alt="Proyecto 2">
+                            <img src="html/web institucional/index.html" class="card-img-top" alt="Proyecto 2">
                             <div class="card-body">
                                 <h5 class="card-title">Proyecto 2</h5>
                                 <p class="card-text">Descripción breve del proyecto 2.</p>
@@ -94,12 +96,13 @@
         const hamburger = document.querySelector('.hamburger');
         const navLinks = document.querySelector('.nav-links');
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('nav-active');
-            hamburger.classList.toggle('toggle');
-        });
+        if(hamburger){
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('nav-active');
+                hamburger.classList.toggle('toggle');
+            });
+        }
     </script>
-
 
 </body>
 </html>
