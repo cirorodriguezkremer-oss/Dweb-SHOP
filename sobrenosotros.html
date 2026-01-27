@@ -13,24 +13,44 @@
 </head>
 <body>
 
-<!-- HEADER -->
 <header class="header">
-    <div class="logo">Dweb<span>SHOP</span></div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+    <div class="container">
 
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold fs-3" href="index.html">
+        <span style="color: #fff;">Dweb</span><span style="color: var(--primary)">SHOP</span>
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
 </header>
 
 <main>

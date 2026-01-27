@@ -19,21 +19,57 @@
         header, footer {
             width: 100%;
         }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+        }
+        .navbar-brand span:first-child {
+            color: #fff;
+        }
+        .navbar-brand span:last-child {
+            color: var(--primary);
+        }
     </style>
 </head>
 <body>
 
 <header class="header">
-    <div class="logo">Dweb<span>SHOP</span></div>
-    <nav>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="portafolio.html">Portafolio</a></li>
-            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #000;">
+    <div class="container">
+
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold fs-3" href="index.html">
+        <span style="color: #fff;">Dweb</span><span style="color: var(--primary)">SHOP</span>
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="servicios.html">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="portafolio.html">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-medium" href="contacto.html">Contacto</a>
+          </li>
         </ul>
-    </nav>
+      </div>
+
+    </div>
+  </nav>
 </header>
 
 <main class="flex-grow-1 d-flex flex-column justify-content-center align-items-center py-5">
@@ -92,22 +128,12 @@
     </section>
 </main>
 
-<footer class="footer text-center py-4">
+<footer class="footer text-center py-4" style="background-color: #000; color: #fff;">
     <p>© 2025 Dweb SHOP</p>
 </footer>
 
 <!-- Bootstrap JS Bundle -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-<script>
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-active');
-        hamburger.classList.toggle('toggle');
-    });
-</script>
 
 </body>
 </html>

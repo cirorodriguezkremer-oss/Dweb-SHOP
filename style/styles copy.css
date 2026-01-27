@@ -27,8 +27,27 @@ body {
     background-color: var(--bg);
     color: var(--text);
     scroll-behavior: smooth;
+
+    /* FLEX para sticky footer*/
+
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    width: 100%;
+    padding: 80px;
+    flex: 1;
+}
+
+.footer{
+    margin-top: auto;
+    text-align: center;
+    padding: 40px;
+    background: #0a0a0a;
+    font-size: 0.9rem;
+    color: var(--text-light);
 }
 
 /* ---------- HEADER ---------- */

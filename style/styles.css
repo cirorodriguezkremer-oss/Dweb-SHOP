@@ -27,8 +27,28 @@ body {
     background-color: var(--bg);
     color: var(--text);
     scroll-behavior: smooth;
+
+    /* FLEX para sticky footer*/
+
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    width: 100%;
+    padding: 80px;
+    flex: 1;
+    background-color: #0a0a0a;
+}
+
+.footer{
+    margin-top: auto;
+    text-align: center;
+    padding: 40px;
+    background: #0a0a0a;
+    font-size: 0.9rem;
+    color: var(--text-light);
 }
 
 /* ---------- HEADER ---------- */
@@ -139,7 +159,7 @@ nav a:focus {
     align-items: center;
     text-align: center;
     padding: 0 20px;
-    background: url(..img/v882-kul-67.jpg) no-repeat center center;
+    background: url('https://images.unsplash.com/photo-1601924582971-9d84f485f83d?auto=format&fit=crop&w=1600&q=80') no-repeat center center;
     background-size: cover;
     color: #fff;
 }
@@ -408,5 +428,3 @@ section {
 a, button {
     outline: none;
 }
-
-/*# sourceMappingURL=styles.css.map */
